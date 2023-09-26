@@ -1,0 +1,22 @@
+<html>
+  <head>
+    <title>Palindrome Program</title>
+  </head>
+  <body>
+    <script>
+      function isPalindrome(num) {
+          
+          const numStr = num.toString();
+          const reversedStr = numStr.split('').reverse().join(''); 
+          return numStr === reversedStr;
+        }
+        const number = 153;
+        if (isPalindrome(number)) {
+          console.log(number + " is a palindrome.");
+        } else {
+          console.log(number + " is not a palindrome.");
+        }
+
+    </script>
+  </body>
+</html>
